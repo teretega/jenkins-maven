@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        TOMCAT_SERVER = 'ec2-16-54-245-221.ca-central-1.compute.amazonaws.com'
+        TOMCAT_SERVER = 'ec2-15-223-219-146.ca-central-1.compute.amazonaws.com'
     }
 
     stages {
@@ -52,4 +52,4 @@ pipeline {
             echo 'Deployment failed!'
         }
     }
-}
+
