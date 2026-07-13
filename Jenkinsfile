@@ -31,7 +31,6 @@ pipeline {
             }
         }
 
-    }
         stage('Deploy to Tomcat') {
             steps {
                 sh '''
@@ -40,8 +39,8 @@ pipeline {
                     sudo systemctl restart tomcat
                 '''
             }
-        } 
-    }
+        }
+       }
 
     post {
         success {
@@ -52,4 +51,4 @@ pipeline {
             echo 'Deployment failed!'
         }
     }
-
+}
